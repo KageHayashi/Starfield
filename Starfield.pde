@@ -1,26 +1,27 @@
-//your code here
-void setup()
-{
-	//your code here
-}
-void draw()
-{
-	//your code here
-}
-class NormalParticle
-{
-	//your code here
-}
-interface Particle
-{
-	//your code here
-}
-class OddballParticle //uses an interface
-{
-	//your code here
-}
-class JumboParticle //uses inheritance
-{
-	//your code here
+
+
+void setup() {
+  size(400,400);
 }
 
+void draw() {
+  
+}
+
+class NormalParticle {
+  double x, y, speed, angle;
+  
+  NormalParticle() {
+    angle = random(0, TWO_PI);
+    x = random(0,width);
+    y = random(0,height);
+  }
+  
+  void move() {
+    
+  }
+  
+  void show() {
+    
+  }
+}
