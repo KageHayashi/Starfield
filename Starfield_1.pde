@@ -1,7 +1,7 @@
 Particles [] starfield = new Particles[200];
 
 void setup() {
-  size(400,400);
+  size(800,800);
   for (int i = 0; i < starfield.length; i++) {
     starfield[i] = new NormalParticle();
   }
