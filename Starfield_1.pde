@@ -33,6 +33,7 @@ class NormalParticle implements Particles{
   }
   
   public void show() {
+    fill(255);
     ellipse((float)x,(float)y,8,8);
   }
 }
@@ -44,21 +45,22 @@ class OddBall implements Particles {
     x = width/2;
     y = height/2;
     angle = random(0,PI);
-    speed = 10;
+    speed = 12;
   }
   
   public void leap() {
-    x = x + Math.cos(angle)*10;
-    y = y + Math.sin(angle)*10;
+    x = x + Math.cos(angle)*speed;
   }
   
   public void show() {
+    fill(255,0,0);
     ellipse((float)x,(float)y,8,8);
   }
 }
 
 class jumbo extends NormalParticle {
   public void show() {
+    fill(255);
     ellipse((float)x,(float)y,16,16);
   }
 }
