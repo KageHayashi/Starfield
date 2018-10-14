@@ -19,19 +19,19 @@ void draw() {
 
 class NormalParticle implements Particles{
   double x, y, speed, angle;
-  
+
   NormalParticle() {
     angle = random(0, TWO_PI);
     x = width/2;
     y = height/2;
     speed = random(0,25);
   }
-  
+
   public void leap() {
     x = x + Math.cos(angle)*speed;
     y = y + Math.sin(angle)*speed;
   }
-  
+
   public void show() {
     fill(255);
     ellipse((float)x,(float)y,8,8);
@@ -40,18 +40,18 @@ class NormalParticle implements Particles{
 
 class OddBall implements Particles {
   double x, y, angle, speed;
-  
+
   OddBall() {
     x = width/2;
     y = height/2;
     angle = random(0,PI);
     speed = 12;
   }
-  
+
   public void leap() {
     x = x + Math.cos(angle)*speed;
   }
-  
+
   public void show() {
     fill(255,0,0);
     ellipse((float)x,(float)y,8,8);
